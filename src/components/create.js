@@ -14,7 +14,7 @@ export function create(onNavigate) {
       <div id="group__password" class="group-pass"> 
          <input id= "password" type="password" name="contraseña" placeholder="Contraseña" maxlength="16">
          <p class="form__input-error"> Digita de 8 a 16 carácteres incluyendo mayúsculas, minúsculas, números y algún carácter especial sin espacios. </p>
-         <img src="Images/ojo.png" class="showPassword">
+         <img src="https://github.com/luisa7gaviria/DEV003-social-network/blob/ramalu/src/Images/ojo.png?raw=true" class="showPassword">
          </div>
     
      <div id="group__passwordtwo" class="group-pass">
@@ -23,7 +23,7 @@ export function create(onNavigate) {
      </div>
 
      <div class="button-create">
-       <button type="submit" id="createAcc" > Crear </button>
+       <input type="submit" id="createAcc" value="Crear"></button>
      </div>
 
   </form>
@@ -32,7 +32,7 @@ export function create(onNavigate) {
   <div class="modal"> 
       <div class="modal-content">
         <p id="createdMsg"> Tu usuario ha sido creado <br> Gracias por registrarte en GGamers</p>
-         <img class="continue-by-g" src="Images/homelogo.png">
+         <img class="continue-by-g" src="https://github.com/luisa7gaviria/DEV003-social-network/blob/ramalu/src/Images/homelogo.png?raw=true">
         </div>
     </div>
 
@@ -85,7 +85,7 @@ export function create(onNavigate) {
 
   myForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    if (inputStatus.name && inputStatus.mail && inputStatus.password) {
+    if (inputStatus.mail && inputStatus.password) {
       createAccount(mailInput.value, input1.value)
         .then(() => {
           section.querySelector('.modal').classList.add('success-modal');
